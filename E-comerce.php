@@ -28,6 +28,7 @@
                                     <th>Producto</th>
                                     <th>Marca</th>
                                     <th>Precio</th>
+                                    
                                 </tr>
                                 <?php
                                  $sentencia="SELECT
