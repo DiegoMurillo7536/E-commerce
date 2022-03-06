@@ -1,0 +1,154 @@
+/* Header*/ 
+body{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lightsteelblue;
+}
+header{
+    background-image: url("./Productos/Fondo.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 30px;
+    border-radius: 10px;
+    padding-left: 2%;
+    color:white
+}
+
+.carrito{ 
+    width: 70px;
+    height: 70px;
+    border: solid;
+    border-radius: 80px;
+    float: right;
+    display: inline;
+    margin-right: 5%;
+}
+
+/* Compra de productos*/ 
+.Compras{
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,400px);
+    gap: 25px;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    
+}
+section{
+    background-image: url("./Productos/Fondo.jfif");
+    background-repeat: no-repeat;
+}
+
+.Compras-Articulo{
+    border: solid;
+    text-align: center;
+    background-color: white;
+}
+.desc{
+    padding: 2%;
+    margin: 2%;
+    background-color: white;
+}
+
+.Compras-Producto{
+    width: 1fr;
+    height: 100%;
+    margin-left: 8%;
+    margin-bottom: -60%;
+    padding: 2%;
+    background-color: white;
+
+}
+.Compras-NombreP{
+    background-color: white;
+   margin: 2%; 
+   font-size: 35px;
+   
+}
+.Compras-Ag{
+    background-color: coral;
+    margin: 2%;
+    border: none;
+    font-size: 20px;
+    padding: 4% 4% 4% 4%;
+    
+}
+.Compras-Formulario{
+    
+    background-color: white;
+     margin: 5% 50% 5% 50%;
+     
+}
+.Compras-Productos{
+    border-radius: 10px;
+    padding-right: 75%;
+    background-image: url("./Productos/Fondo.jfif");
+   color: white;
+}
+ul{
+    padding: 0% 0% 0% 0%;
+}
+#carro_principal{
+    list-style: none;
+}
+#productocarro{
+    text-align: left;
+    list-style: none;
+    font-size: 20px;
+    width: 410px;
+    height: 150px;
+    border: solid;
+}
+table{
+  
+    text-align: center;
+    width:400px;
+    color: black;
+    border-collapse: collapse;
+}
+
+th,td{
+    background-color: white;
+    opacity: 75%;
+
+}
+#scroll{
+  overflow-y: scroll;
+  height:60px;
+  width:420px;
+  padding: 4.3%;
+  float: right;
+
+}
+li{
+    list-style: none ;
+}
+#totalcarro{
+    margin: 1%;
+   text-align: center;
+   border: solid;
+}
+#item{
+    margin-left: 90%;
+    margin-right: 0%;
+}
+#desple{
+    height: 50px;
+    width: 420px;
+    margin-left: 34%;
+    float: right;
+    margin-top: 2%;
+}
+#menu #desple{
+    display: none;
+}
+#menu #item:hover #desple{
+    display: block;
+}
+::-webkit-scrollbar {
+    display: none;
+}
