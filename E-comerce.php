@@ -19,7 +19,7 @@
         <h1>E-commerce</h1>
         <div id="menu">
             <ul>
-                <li id="item"> <img src="add-gacfa42d99_640.png" alt="" class="carrito"> </img>
+                <li id="item"> <img src="./Img/add-gacfa42d99_640.png" alt="" class="carrito"> </img>
                     <ul id="desple">
                         <li>
                             <div id="scroll">
@@ -27,12 +27,13 @@
                                 <tr>
                                     <th>Producto</th>
                                     <th>Marca</th>
+                                    <th>Cantidad</th>
                                     <th>Precio</th>
                                     
                                 </tr>
                                 <?php
                                  $sentencia="SELECT
-                                 p.nombre,p.marca,p.precio FROM producto AS p
+                                 p.nombre,p.marca,c.Cantidad_Carro,p.precio,Cantidad_Carro*Precio FROM producto AS p
                                  INNER JOIN carro_compra as c ON c.id_producto=p.id";
                                  $resultado=mysqli_query($conexion,$sentencia);
                                 while ($muestra=mysqli_fetch_array($resultado)) {
@@ -42,7 +43,8 @@
                         
                                 <td> <?php echo $muestra['nombre'] ?></td>
                                  <td> <?php echo $muestra['marca'] ?></td>
-                                 <td> <?php echo $muestra['precio'] ?></td>
+                                 <td> x<?php echo $muestra['Cantidad_Carro'] ?></td>
+                                 <td> <?php echo $muestra['Cantidad_Carro*Precio'] ?></td>
                                 </tr>
                               
                                <?php
@@ -55,13 +57,13 @@
                                     <th>Total</th> 
                                     <?php
                                  $sentencia2="SELECT
-                                 p.nombre,p.marca,p.precio,SUM(precio) FROM producto AS p
+                                 p.nombre,p.marca,p.precio,Cantidad_Carro,SUM(Cantidad_Carro*Precio) FROM producto AS p
                                  INNER JOIN carro_compra as c ON c.id_producto=p.id";
                                  $resultado2=mysqli_query($conexion,$sentencia2);
                                 while ($muestra2=mysqli_fetch_array($resultado2)) {
                                  # code...
                                ?> 
-                                    <td><?php echo $muestra2['SUM(precio)'] ?></td>
+                                    <td><?php echo $muestra2['SUM(Cantidad_Carro*Precio)'] ?></td>
                                 </tr>
                                 <?php
                                 }
@@ -82,7 +84,7 @@
     <section class="Compras">
 
         <article class="Compras Compras-Articulo">
-            <img src="pocket-watch-gf8c53787f_640.jpg" alt="" class="Compras Compras-Producto">
+            <img src="./Img/pocket-watch-gf8c53787f_640.jpg" alt="" class="Compras Compras-Producto">
             <?php
                 $producto="SELECT * FROM producto where id=01";
                 $muestra_productos=mysqli_query($conexion,$producto);
@@ -102,7 +104,7 @@
         </article>
 
         <article class="Compras Compras-Articulo ">
-            <img src="smart-watch-gbd97687f1_640.jpg" alt="" class="Compras Compras-Producto">
+            <img src="./Img/smart-watch-gbd97687f1_640.jpg" alt="" class="Compras Compras-Producto">
             <?php
                 $producto="SELECT * FROM producto where id=2";
                 $muestra_productos=mysqli_query($conexion,$producto);
@@ -122,7 +124,7 @@
         </article>
 
         <article class="Compras Compras-Articulo ">
-            <img src="wrist-g1d0e9f2a5_640.jpg" alt="" class="Compras Compras-Producto">
+            <img src="./Img/wrist-g1d0e9f2a5_640.jpg" alt="" class="Compras Compras-Producto">
             <?php
                 $producto="SELECT * FROM producto where id=03";
                 $muestra_productos=mysqli_query($conexion,$producto);
