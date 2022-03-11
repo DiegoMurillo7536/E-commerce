@@ -1,8 +1,9 @@
 <?php
 $conexion= mysqli_connect("localhost","root","","ecommerce");
 $id="01";
-$cantidad=$_POST['cantidad']
-$sentencia="INSERT INTO `carro_compra`(`id_producto`,sesion,cantidad) VALUES ('$id',01)";
+$cantidad=$_POST['cantidad'];
+$sentencia="INSERT INTO `carro_compra`(`id_producto`,sesion,Cantidad_Carro) 
+VALUES ('$id',01,$cantidad)";
  $resul=mysqli_query($conexion,$sentencia);
  if ($resul) {
      # code...

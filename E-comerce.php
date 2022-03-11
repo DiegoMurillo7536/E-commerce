@@ -96,7 +96,7 @@
                 }
             ?>
             <form action="./Productos/Reloj1.php" method="post" class="Compras Compras-Formulario">
-            <input type="number" min="1" max="10" placeholder="Elige la cantidad que deseas (máximo 10)" class="Compras Compras-Can" name="cantidad">
+            <input type="number" min="1" max="10" placeholder="Elige la cantidad que deseas " class="Compras-Can" name="cantidad">
             <button class="Compras Compras-Ag"> Agregar al carrito</button>
             </form>
         </article>
@@ -116,7 +116,7 @@
                 }
             ?>
             <form action="./Productos/Reloj2.php" method="post" class="Compras Compras-Formulario">
-            <input type="number" min="1" max="10" placeholder="Elige la cantidad que deseas (máximo 10)">
+            <input type="number" min="1" max="10" placeholder="Elige la cantidad que deseas" class="Compras-Can" name="cantidad"> 
                 <button class="Compras Compras-Ag"> Agregar al carrito</button>
             </form>
         </article>
@@ -136,7 +136,7 @@
                 }
             ?>
             <form action="./Productos/Reloj3.php" method="post" class="Compras Compras-Formulario">
-            <input type="number" min="1" max="10" placeholder="Elige la cantidad que deseas (máximo 10)" class="Compras Compras-Can" name="cantidad">
+            <input type="number" min="1" max="10" placeholder="Elige la cantidad que deseas " class="Compras-Can" name="cantidad">
                 <button class="Compras Compras-Ag"> Agregar al carrito</button>
             </form>
         </article>

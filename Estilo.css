@@ -77,6 +77,27 @@ section{
     padding: 4% 4% 4% 4%;
     
 }
+.Compras-Can{
+    position: relative;
+    left: 100px;
+    margin-right: 210px;
+    text-align: center;
+    height: 40px;
+    background-color: coral;
+    color: black;
+    border: none;
+    border-radius: 20px;
+}
+.Compras-Can::placeholder{
+    color: black;
+    position: relative;
+    left: 5px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
 .Compras-Formulario{
     
     background-color: white;
