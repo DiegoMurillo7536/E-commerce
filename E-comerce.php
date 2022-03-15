@@ -69,8 +69,8 @@
                                 }
                                ?>
                             </table>
-                                <br>
-                            
+                            <br>
+                            <a href="./Productos/eliminar.php" id="Eliminar_Producto">Eliminar productos del carrito</a>
                         </div>
                         </li>
                     </ul>
